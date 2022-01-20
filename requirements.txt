@@ -1,0 +1,7 @@
+tensorflow>=2.7.0
+numpy>=1.19.5
+opencv_python>=4.5.5.62
+streamlit-webrtc>=0.34.1
+tensorflow>=cpu
+opencv-contrib-python-headless>=4.5.5.62
+pip>=21.3.1
