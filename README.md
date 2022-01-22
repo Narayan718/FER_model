@@ -29,6 +29,14 @@ The deep learning CNN model was used to train the model. Each image will pass th
 * Training
 * Validation
 
+**Dependencies**
+
+* Python 3
+* Tensorflow 2.0
+* Streamlit
+* Streamlit-Webrtc
+* OpenCV
+
 Built a web application using streamlit and developed using streamlit sharing. I have used streamlit webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to the VideoTransformer function to detect the emotion.
 
 **App link**
