@@ -53,16 +53,16 @@ class Faceemotion(VideoTransformerBase):
         return img
 
 def main():
-    # Face Analysis Application #
+    # Face Emotion Application #
     st.title("Face Emotion Recognition App")
-    activiteis = ["Home", "Emotion Recognition", "About"]
-    choice = st.sidebar.selectbox("Select Activity", activiteis)
+    actions = ["Home", "Emotion Recognition", "About"]
+        choice = st.sidebar.selectbox("Select Action", actions)
     st.sidebar.markdown(
         """ Created by Lakshmi Narayana""")
     if choice == "Home":
         html_temp_home1 = """<div style="background-color:#6D7B8D;padding:10px">
                                             <h4 style="color:white;text-align:center;">
-                                            Face Detection Emotion Recognition App OpenCV, Custom CNN model and Streamlit.</h4>
+                                            Face Emotion Recognition App OpenCV, Custom CNN model and Streamlit.</h4>
                                             </div>
                                             </br>"""
         st.markdown(html_temp_home1, unsafe_allow_html=True)
@@ -84,7 +84,7 @@ def main():
 	
     elif choice == "Emotion Recognition":
         st.header("Webcam Live Feed")
-        st.write("Click on start to use webcam and detect your face emotion")
+        st.write("Click on START to use webcam and detect your face emotion")
         webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION,
                         video_processor_factory=Faceemotion)  
 
@@ -92,14 +92,14 @@ def main():
         st.subheader("About this app")
         html_temp_about1= """<div style="background-color:#6D7B8D;padding:10px">
                                     <h4 style="color:white;text-align:center;">
-                                    Real time face detection emotion recognition application</h4>
+                                    Real time face emotion recognition application</h4>
                                     </div>
                                     </br>"""
         st.markdown(html_temp_about1, unsafe_allow_html=True)
 
         html_temp4 = """
                              		<div style="background-color:#98AFC7;padding:10px">
-                             		<h4 style="color:white;text-align:center;">This Application is developed by Lakshmi Narayana using Streamlit Framework, Opencv, Tensorflow and Keras library for Almabetter Capstone Project. </h4>
+                             		<h4 style="color:white;text-align:center;">This Application is developed by Lakshmi Narayana using Streamlit Framework, Opencv, Tensorflow and Keras library. </h4>
                              		<h4 style="color:white;text-align:center;">Thanks for Visiting</h4>
                              		</div>
                              		<br></br>
