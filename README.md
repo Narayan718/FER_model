@@ -15,3 +15,18 @@ In a physical classroom during a lecture, the teacher can see the faces, assess 
 **Problem Statement**
 
 We will solve the above-mentioned challenge by applying deep learning algorithms to live video data. The solution to this problem is by recognizing facial emotions.
+
+**Objective**
+
+The main objective is to build a model that can recognize the face emotion in real-time.
+
+**Approach**
+
+The deep learning CNN model was used to train the model. Each image will pass through a
+series of convolution layers with filters, ReLu activation function, fully connected layers and apply
+softmax activation function at last to classify the emotion.
+* Data Pre-processing
+* Image Augmentation
+* Feature Extraction
+* Training
+* Validation
