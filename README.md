@@ -22,11 +22,15 @@ The main objective is to build a model that can recognize the face emotion in re
 
 **Approach**
 
-The deep learning CNN model was used to train the model. Each image will pass through a
-series of convolution layers with filters, ReLu activation function, fully connected layers and apply
-softmax activation function at last to classify the emotion.
+The deep learning CNN model was used to train the model. Each image will pass through a series of convolution layers with filters, ReLu activation function, fully connected layers and apply softmax activation function at last to classify the emotion.
 * Data Pre-processing
 * Image Augmentation
 * Feature Extraction
 * Training
 * Validation
+
+Developed a  web application using streamlit and developed using streamlit sharing. I have used streamlit webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to the VideoTransformer function to detect the emotion.
+
+**App link**
+
+**https://share.streamlit.io/narayan718/fer_model/main/web.py**
