@@ -56,7 +56,7 @@ def main():
     # Face Emotion Application #
     st.title("Face Emotion Recognition App")
     actions = ["Home", "Emotion Recognition", "About"]
-        choice = st.sidebar.selectbox("Select Action", actions)
+    choice = st.sidebar.selectbox("Select Action", actions)
     st.sidebar.markdown(
         """ Created by Lakshmi Narayana""")
     if choice == "Home":
