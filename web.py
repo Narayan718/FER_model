@@ -55,7 +55,7 @@ class Faceemotion(VideoTransformerBase):
 def main():
     # Face Emotion Application #
     st.title("Face Emotion Recognition App")
-    actions = ["Home", "Emotion Recognition", "About"]
+    actions = ["Home", "Emotion Recognition"]
     choice = st.sidebar.selectbox("Select Action", actions)
     st.sidebar.markdown(
         """ Created by Lakshmi Narayana""")
@@ -88,24 +88,7 @@ def main():
         webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION,
                         video_processor_factory=Faceemotion)  
 
-    elif choice == "About":
-        st.subheader("About this app")
-        html_temp_about1= """<div style="background-color:#6D7B8D;padding:10px">
-                                    <h4 style="color:white;text-align:center;">
-                                    Real time face emotion recognition application</h4>
-                                    </div>
-                                    </br>"""
-        st.markdown(html_temp_about1, unsafe_allow_html=True)
-
-        html_temp4 = """
-                             		<div style="background-color:#98AFC7;padding:10px">
-                             		<h4 style="color:white;text-align:center;">This Application is developed by Lakshmi Narayana using Streamlit Framework, Opencv, Tensorflow and Keras library. </h4>
-                             		<h4 style="color:white;text-align:center;">Thanks for Visiting</h4>
-                             		</div>
-                             		<br></br>
-                             		<br></br>"""
-
-        st.markdown(html_temp4, unsafe_allow_html=True)
+    
 
     else:
         pass
