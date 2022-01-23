@@ -54,44 +54,33 @@ class Faceemotion(VideoTransformerBase):
 
 def main():
     # Face Emotion Application #
-    st.title("Face Emotion Recognition App")
-    actions = ["Home", "Emotion Recognition"]
-    choice = st.sidebar.selectbox("Select Action", actions)
-    st.sidebar.markdown(
-        """ Created by Lakshmi Narayana""")
-    if choice == "Home":
-        html_temp_home1 = """<div style="background-color:#6D7B8D;padding:10px">
-                                            <h4 style="color:white;text-align:center;">
-                                            Model built from OpenCV, Custom CNN model and Streamlit.</h4>
-                                            </div>
-                                            </br>"""
-        st.markdown(html_temp_home1, unsafe_allow_html=True)
-        st.write("""
-                 Directions.
-		 
-    1. Click on the Home button for more options.
-    
-    2. Click on the START button to start the session.
-		 
-    3. Allow the Webcam access to utilise the service.
-    
-    4. It will predict the realtime face detection emotion recogition.
-    
-    5. Click on STOP  to end the session.
-		     
-                 """)
+    html_temp = """
+    <body style="background-color:red;">
+    <div style="background-color:blue ;padding:10px">
+    <h2 style="color:white;text-align:center;">Real Time Face Emotion Recognisation app</h2>
+    <style>#"This app is created by Sibani choudhury" {text-align: center}</style>
+    </div>
+    </body>
+    """
+  
+
+    st.markdown(html_temp, unsafe_allow_html=True)
+    st.write("Created by Lakshmi Narayana")
+    st.write("Model built from OpenCV, Custom CNN model and Streamlit")
+    st.write("**Directions**")
+    st.write('''
+                
+                1. Click on the START button to start the session.
+                
+                2. Allow the Webcam access to utilise the service. 
         
-	
-    elif choice == "Emotion Recognition":
-        st.header("Webcam Live Feed")
-        st.write("Click on START to use webcam and detect your face emotion")
-        webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION,
-                        video_processor_factory=Faceemotion)  
-
-    
-
-    else:
-        pass
+                3. It will predict the realtime face detection emotion recogition.
+                
+                4. Click on STOP to end the session.
+                
+                ''')
+    webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION,
+                        video_processor_factory=Faceemotion)
 
 
 if __name__ == "__main__":
