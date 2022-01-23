@@ -57,8 +57,8 @@ def main():
     html_temp = """
     <body style="background-color:red;">
     <div style="background-color:blue ;padding:10px">
-    <h2 style="color:white;text-align:center;">Real Time Face Emotion Recognisation app</h2>
-    <style>#"This app is created by Sibani choudhury" {text-align: center}</style>
+    <h2 style="color:white;text-align:center;">Face Emotion Recognisation App</h2>
+    <style>#"Created by Lakshmi Narayana" {text-align: center}</style>
     </div>
     </body>
     """
