@@ -74,7 +74,7 @@ def main():
                 
                 2. Allow the Webcam access to utilise the service. 
         
-                3. It will predict the realtime face detection emotion recogition.
+                3. It will predict the realtime face emotion using webcam.
                 
                 4. Click on STOP to end the session.
                 
